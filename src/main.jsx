@@ -6,7 +6,7 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx"
 import Login from "./components/Login.jsx";
-import App from "./App.jsx";
+import App from "./components/App.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([

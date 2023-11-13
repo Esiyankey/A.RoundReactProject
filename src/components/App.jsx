@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { BsArrowRight, BsYoutube, BsClockFill, BsCheck2 } from "react-icons/bs";
-import aroundImage from "../assets/aroundImage.png"
-import aroundImage2 from "../assets/aroundImage2.png"
-import aroundImage3 from "../assets/aroundImage3.png"
-import aroundImage4 from "../assets/aroundImage4.png"
-import instrumentInstruction from "../assets/instrument-instruction.jpg"
-import voiceTraning from "../assets/voice-training.jpg"
-import jazz from "../assets/jazz.jpg"
-import soundEngeneering from "../assets/sound-engeneering.jpg"
-import songWriting from "../assets/song-writing.jpg"
-import musicTherapy from "../assets/music-therapy.jpg"
-import "../styles/homepage.css"
+import aroundImage from "../assets/aroundImage.png";
+import aroundImage2 from "../assets/aroundImage2.png";
+import aroundImage3 from "../assets/aroundImage3.png";
+import aroundImage4 from "../assets/aroundImage4.png";
+import instrumentInstruction from "../assets/instrument-instruction.jpg";
+import voiceTraning from "../assets/voice-training.jpg";
+import jazz from "../assets/jazz.jpg";
+import soundEngeneering from "../assets/sound-engeneering.jpg";
+import songWriting from "../assets/song-writing.jpg";
+import musicTherapy from "../assets/music-therapy.jpg";
+import "../styles/homepage.css";
+import "../styles/App.css"
 
-function homepage() {
+
+function App() {
   const info = [
     {
       img: instrumentInstruction,
@@ -192,14 +194,14 @@ function homepage() {
             </div>
             <div className="flex justify-center items-center">
               <div className=" w-80 relative md:w-[400px] h-[300px]">
-                <img src={aroundImage}  />
+                <img src={aroundImage} />
               </div>
             </div>
           </div>
           <div className="md:grid   flex flex-col-reverse mt-28 gap-8 my-4  md:grid-cols-2">
             <div className="flex justify-center items-center">
               <div className=" w-80 relative md:w-[400px] h-[300px]">
-                <img src={aroundImage2}  />
+                <img src={aroundImage2} />
               </div>
             </div>
             <div className="md:mx-4 mx-2">
@@ -240,7 +242,7 @@ function homepage() {
             </div>
             <div className="flex justify-center items-center">
               <div className="w-80 relative md:w-[400px] h-[300px]">
-                <img src={aroundImage3}  />
+                <img src={aroundImage3} />
               </div>
             </div>
           </div>
@@ -290,7 +292,7 @@ function homepage() {
                 className="w-[330px] bg-[#12172a] rounded-xl border overflow-hidden border-[#262b42]"
               >
                 <div className="relative w-full h-[198px]">
-                  <img src={items.img}  />
+                  <img src={items.img} />
                 </div>
                 <div className="p-6">
                   <h3 className=" leading-4 mb-4 text-lg font-semibold text-white">
@@ -348,4 +350,4 @@ function homepage() {
   );
 }
 
-export default homepage;
+export default App;
