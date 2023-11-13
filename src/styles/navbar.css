@@ -1,0 +1,5 @@
+.active{
+    border-bottom: 1px ;
+    background: radial-gradient(circle, rgba(35,27,76,1) 0%, rgba(13,18,36,1) 100%);
+
+}
