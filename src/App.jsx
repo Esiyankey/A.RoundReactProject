@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Homepage from "./components/homepage";
-import { BsArrowRight, BsYoutube, BsClockFill, BsCheck2 } from "react-icons/bs";
+import Homepage from "./components/Homepage";
+
 
 function App() {
   return (
