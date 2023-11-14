@@ -63,7 +63,7 @@ function homepage() {
   ];
   return (
     <>
-      <div className="max-w-[1400px]  m-auto ">
+      <div className="max-w-[1400px] overflow-x-hidden m-auto ">
         <section>
           <div className="block my-36">
             <div className="  md:w-[680px] lg:w-[500px]  m-auto ml-4 mt-[5rem] lg:mt-[6rem]">
@@ -166,8 +166,8 @@ function homepage() {
       <section className="border-t-2 border-t-[#262b42] w-[100%] pt-[2rem]">
         <header className="flex flex-col justify-center items-center my-12 mx-6">
           <p className="text-[1.2rem] text-[#9e7cf3]">Features</p>
-          <h3 className="text-[30px] text-white font-bold">
-            Why learn with A.round{" "}
+          <h3 className="md:text-[30px] text-2xl text-white font-bold">
+            Why learn with A.round
           </h3>
         </header>
         <div className=" max-w-[1200px] m-auto mt-16">

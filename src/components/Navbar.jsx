@@ -80,7 +80,7 @@ function Navbar() {
             </Link>
           </div>
         </div>
-        <button className="p-2  mr-2  rounded">
+        <button className="p-2  mr-6  rounded">
           <FaBars
             className="text-[#4e536a] text-[1.4rem] md:hidden "
             onClick={handleShowMenu}
@@ -93,13 +93,11 @@ function Navbar() {
                 Subscription
               </li>
               <li className="hover:text-white  duration-700 py-2 ">Courses</li>
-              <li className="hover:text-white duration-700    py-2">
-                Learning Paths
-              </li>
+             
               <li className="hover:text-white duration-700  py-2">Forum</li>
               <Link
                 to="/contact"
-                className="hover:text-white  duration-700  py-2"
+                className="hover:text-white my-2 duration-700  py-2"
               >
                 Contact
               </Link>
