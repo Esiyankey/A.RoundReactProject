@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BiUser, BiLogoFacebookCircle } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
 import "../styles/login.css";
+import { Link } from "react-router-dom";
 import {
   AiOutlineLock,
   AiOutlineEye,
@@ -72,7 +73,7 @@ function Login() {
               <span className="text-blue-600 font-bold"> facebook</span>
             </button>
           </div>
-          <p className="text-lg">Already have an account? <span className="text-pink-500">Sign up</span></p>
+          <p className="text-lg">Already have an account? <Link to="/signup" className="text-pink-500">Sign up</Link></p>
         </form>
       </div>
     </div>

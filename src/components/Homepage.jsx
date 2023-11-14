@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { BsArrowRight, BsYoutube, BsClockFill, BsCheck2 } from "react-icons/bs";
-import aroundImage from "../assets/aroundImage.png"
-import aroundImage2 from "../assets/aroundImage2.png"
-import aroundImage3 from "../assets/aroundImage3.png"
-import aroundImage4 from "../assets/aroundImage4.png"
-import instrumentInstruction from "../assets/instrument-instruction.jpg"
-import voiceTraning from "../assets/voice-training.jpg"
-import jazz from "../assets/jazz.jpg"
-import soundEngeneering from "../assets/sound-engeneering.jpg"
-import songWriting from "../assets/song-writing.jpg"
-import musicTherapy from "../assets/music-therapy.jpg"
-import "../styles/homepage.css"
+import aroundImage from "../assets/aroundImage.png";
+import aroundImage2 from "../assets/aroundImage2.png";
+import aroundImage3 from "../assets/aroundImage3.png";
+import aroundImage4 from "../assets/aroundImage4.png";
+import instrumentInstruction from "../assets/instrument-instruction.jpg";
+import voiceTraning from "../assets/voice-training.jpg";
+import jazz from "../assets/jazz.jpg";
+import soundEngeneering from "../assets/sound-engeneering.jpg";
+import songWriting from "../assets/song-writing.jpg";
+import musicTherapy from "../assets/music-therapy.jpg";
+import "../styles/homepage.css";
 
 function homepage() {
   const info = [
@@ -192,14 +192,14 @@ function homepage() {
             </div>
             <div className="flex justify-center items-center">
               <div className=" w-80 relative md:w-[400px] h-[300px]">
-                <img src={aroundImage}  />
+                <img src={aroundImage} />
               </div>
             </div>
           </div>
           <div className="md:grid   flex flex-col-reverse mt-28 gap-8 my-20 md:my-32 md:grid-cols-2">
             <div className="flex justify-center items-center">
               <div className=" w-80 relative md:w-[400px] h-[300px]">
-                <img src={aroundImage2}  />
+                <img src={aroundImage2} />
               </div>
             </div>
             <div className="md:mx-4 mx-2">
@@ -240,7 +240,7 @@ function homepage() {
             </div>
             <div className="flex justify-center items-center">
               <div className="w-80 relative md:w-[400px] h-[300px]">
-                <img src={aroundImage3}  />
+                <img src={aroundImage3} />
               </div>
             </div>
           </div>
@@ -282,29 +282,34 @@ function homepage() {
             experience you need to succeed.
           </p>
         </header>
-        <div className="grid grid-cols-1 mb-12   mt-28 md:grid-cols-2  lg:grid-cols-3 gap-5 lg:max-w-[1050px] md:max-w-[750px] m-auto">
-          {info.map((items, index) => {
-            return (
-              <div
-                key={index}
-                className="w-[330px] bg-[#12172a] rounded-xl border overflow-hidden border-[#262b42]"
-              >
-                <div className="relative w-full h-[198px]">
-                  <img src={items.img}  />
+        {/* <div className="w-[300px] m-auto"> */}
+          {/* <div className="   "> */}
+            {/* {info.map((items, index) => {
+              return (
+                <div
+                  key={index}
+                  className="w-[330px] bg-[#12172a] rounded-xl border overflow-hidden border-[#262b42]"
+                >
+                  <div className="relative w-full h-[198px]">
+                    <img src={items.img} />
+                  </div>
+                  <div className="p-6">
+                    <h3 className=" leading-4 mb-4 text-lg font-semibold text-white">
+                      {items.title}
+                    </h3>
+                    <p className="mb-3 text-base text-[#c9d8e2]">
+                      {" "}
+                      {items.info}
+                    </p>
+                    <span className="font-semibold text-lg text-white">
+                      {items.price}
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className=" leading-4 mb-4 text-lg font-semibold text-white">
-                    {items.title}
-                  </h3>
-                  <p className="mb-3 text-base text-[#c9d8e2]"> {items.info}</p>
-                  <span className="font-semibold text-lg text-white">
-                    {items.price}
-                  </span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })} */}
+          {/* </div> */}
+        {/* </div> */}
         <div className="text-center mb-4 ">
           <button className=" text-white rounded-[30px] font-semibold px-7 py-4 bg-[#8244ff]">
             VIEW ALL COURSES
@@ -316,7 +321,6 @@ function homepage() {
           <img
             src="https://codewithmosh.com/_next/static/media/money-back.160ae298.svg"
             className="absolute w-12 -left-9 -top-12"
-           
           />
           <header className="flex justify-center items-center flex-col">
             <span className="font-bold text-4xl text-pink-500">$29/M</span>
