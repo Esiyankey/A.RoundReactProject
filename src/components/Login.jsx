@@ -55,18 +55,18 @@ function Login() {
           <button className="py-3 px-7 backgroundGradientButton text-lg text-white w-full border rounded-xl">
             Log In
           </button>
-          <h4 className="my-4 text-lg">
+          <h4 className="my-4 text-base">
             ..............Login with Others................
           </h4>
           <div className="flex items-center  mb-6 relative">
-            <FcGoogle className="absolute text-2xl left-20 text-center top-4 ml-2" />
+            <FcGoogle className="absolute text-2xl left-16 md:left-20 text-center top-4 ml-2" />
             <button className="py-3 px-9 w-full  border-[2px] text-lg border-[#e7e9ec] rounded-xl">
               Log in with{" "}
               <span className="text-blue-600 font-bold">Google</span>
             </button>
           </div>
           <div className="flex items-center mb-6 relative">
-            <BiLogoFacebookCircle className="absolute text-blue-600 text-center left-[4.6rem] text-2xl top-4 ml-2" />
+            <BiLogoFacebookCircle className="absolute text-blue-600 text-center left-[4rem] md:left-[4.6rem] text-2xl top-4 ml-2" />
             <button className="py-3 px-9 w-full  border-[2px] border-[#e7e9ec] text-lg rounded-xl">
               Log in with{" "}
               <span className="text-blue-600 font-bold"> facebook</span>
