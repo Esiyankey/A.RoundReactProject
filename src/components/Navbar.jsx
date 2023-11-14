@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <>
       <div
-        className={`flex  justify-between  lg:px-60  top-0 fixed w-full z-20 m-auto  items-center  lg:flex ${
+        className={`flex justify-between lg:pl-44 top-0 fixed w-full z-20 m-auto items-center lg:flex ${
           scroll ? "active" : ""
         }`}
       >
@@ -50,7 +50,7 @@ function Navbar() {
             height={10}
           />
         </div>
-        <div className=" leading-none items-center hidden  md:flex">
+        <div className=" leading-none items-center pl-40 hidden  md:flex">
           <div className={`left-[10rem] flex gap-7 font-[500] pl-7  `}>
             <ul className="md:flex  md:items-center md:justify-center cursor-pointer md:gap-9 text-[0.9rem] md:text-[0.84rem] text-[#ced8e3]">
               <li className="hover:text-white duration-700 py-3 md:py-0">
@@ -87,8 +87,8 @@ function Navbar() {
           />
         </button>
         {showMenu ? (
-          <div className="duration-700 transition-all border-b-1  md:hidden  border-[rgba(13,18,36,1)] bg-[rgba(13,18,36,1)]  sm:bg-transparent w-full   font-[500]    absolute left-0 top-[5rem] max-height pl-7 slide-down-menu block">
-            <ul className="  cursor-pointer md:gap-9 text-[0.9rem]  text-[#ced8e3]">
+          <div className="duration-700 transition-all border-b-1 py-5 md:hidden  border-[rgba(13,18,36,1)] bg-[rgba(13,18,36,1)]  sm:bg-transparent w-full   font-[500]    absolute left-0 top-[3.3rem] max-height pl-7 slide-down-menu block">
+            <ul className="  cursor-pointer my-5 text-[0.9rem]  text-[#ced8e3]">
               <li className="hover:text-white duration-700 py-2 ">
                 Subscription
               </li>
@@ -99,14 +99,14 @@ function Navbar() {
               <li className="hover:text-white duration-700  py-2">Forum</li>
               <Link
                 to="/contact"
-                className="hover:text-white duration-700  py-2"
+                className="hover:text-white  duration-700  py-2"
               >
                 Contact
               </Link>
             </ul>
             <Link
               to="/login"
-              className=" px-3 py-2 mt-6 text-[#ffffff] bg-[#8244ff]  text-[0.7rem] md:text-[1rem] relative right-4 sm:right-0  rounded-[30px] hover:bg-[#6d32e4] duration-700"
+              className=" px-3 py-2 mt-7 text-[#ffffff] bg-[#8244ff]  text-[0.7rem] md:text-[1rem] relative right-4 sm:right-0  rounded-[30px] hover:bg-[#6d32e4] duration-700"
             >
               Member Area
             </Link>

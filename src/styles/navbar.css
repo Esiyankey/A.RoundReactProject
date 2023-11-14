@@ -3,9 +3,7 @@
     background: radial-gradient(circle, rgba(35,27,76,1) 0%, rgba(13,18,36,1) 100%);
 
 }
-.max-height{
-    max-height: 700px;
-}
+
 .slide-down-menu {
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;

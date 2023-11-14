@@ -171,7 +171,7 @@ function homepage() {
           </h3>
         </header>
         <div className=" max-w-[1200px] m-auto mt-16">
-          <div className="grid grid-cols-1 mt-28 gap-8 my-10 md:grid-cols-2">
+          <div className="grid grid-cols-1 mt-28 gap-8 my-20 md:my-32 md:grid-cols-2">
             <div className="md:mx-4 mx-2">
               <button className="w-[3.4rem]  h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsClockFill className="text-[1.7rem] text-[#a679ff] " />
@@ -196,7 +196,7 @@ function homepage() {
               </div>
             </div>
           </div>
-          <div className="md:grid   flex flex-col-reverse mt-28 gap-8 my-4  md:grid-cols-2">
+          <div className="md:grid   flex flex-col-reverse mt-28 gap-8 my-20 md:my-32 md:grid-cols-2">
             <div className="flex justify-center items-center">
               <div className=" w-80 relative md:w-[400px] h-[300px]">
                 <img src={aroundImage2}  />
@@ -220,7 +220,7 @@ function homepage() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 mt-28 gap-8 my-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 mt-28 gap-8 my-10 md:my-32 md:grid-cols-2">
             <div className="mx-4 ">
               <button className="w-[3.4rem] h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsYoutube className="text-[1.7rem] text-[#6cccaf] " />
@@ -244,7 +244,7 @@ function homepage() {
               </div>
             </div>
           </div>
-          <div className="md:grid  flex flex-col-reverse mt-28 gap-8 my-4 md:my-10 md:grid-cols-2">
+          <div className="md:grid  flex flex-col-reverse mt-28 gap-8 my-10 md:my-32 md:grid-cols-2">
             <div className="flex justify-center items-center">
               <div className="w-80 relative md:w-[400px] h-[500px]">
                 <img src={aroundImage4} />
@@ -282,7 +282,7 @@ function homepage() {
             experience you need to succeed.
           </p>
         </header>
-        <div className="grid  grid-cols-1 mb-12  mt-28 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:max-w-[1050px] md:max-w-[750px] m-auto">
+        <div className="grid grid-cols-1 mb-12   mt-28 md:grid-cols-2  lg:grid-cols-3 gap-5 lg:max-w-[1050px] md:max-w-[750px] m-auto">
           {info.map((items, index) => {
             return (
               <div
