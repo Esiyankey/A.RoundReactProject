@@ -85,10 +85,10 @@ function homepage() {
         <section className="mt-[9rem] mb-[7rem]">
           <div className="flex flex-col items-center  ">
             <h3 className="text-[#696bfe] text-[1.4rem]">Hello,</h3>
-            <h3 className="text-white text-[2rem] my-4 font-bold">
+            <h3 className="text-white text-xl md:text-[2rem] my-4 font-bold">
               This is A.round lessons,
             </h3>
-            <p className="text-[#d2d8c8]  mt-[2rem] text-[1.1rem] md:text-[1.2rem] flex items-center w-[23.4rem] justify-center md:w-[44rem] text-center mb-[3rem]">
+            <p className="text-[#d2d8c8]  mt-[2rem] text-base md:text-[1.2rem] flex items-center w-[23.4rem] justify-center md:w-[44rem] text-center mb-[3rem]">
               Feeling stuck or overwhelmed in your musical quest? <br />
               No worries,I've got your back! Together, we'll harmonize your
               skills, and compose a brighter future.
@@ -100,7 +100,7 @@ function homepage() {
             </div>
           </div>
           <div className="grid grid-cols-2 mt-9 gap-6 md:grid-cols-4 w-[350px] md:w-[940px] md:mt-[5rem] m-auto md:gap-[0.8rem]">
-            <div className="shadow-xl w-[11rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)]  dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)]  dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
@@ -115,7 +115,7 @@ function homepage() {
                 </p>
               </div>
             </div>
-            <div className="shadow-xl w-[11rem]  md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem]  md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-green-600 to-transparent  w-full"></div>
@@ -130,7 +130,7 @@ function homepage() {
                 </p>
               </div>
             </div>
-            <div className="shadow-xl w-[11rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border  border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border  border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-transparent  w-full"></div>
@@ -145,7 +145,7 @@ function homepage() {
                 </p>
               </div>
             </div>
-            <div className="shadow-xl w-[11rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-orange-400 to-transparent  w-full"></div>
@@ -176,13 +176,13 @@ function homepage() {
               <button className="w-[3.4rem]  h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsClockFill className="text-[1.7rem] text-[#a679ff] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#956ffd] font-semibold leading-9">
+              <h3 className="text-base mb-2 text-[#956ffd] font-semibold leading-9">
                 Fast-track your learning
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className="text-2xl md:text-3xl text-white mb-[1rem] font-bold">
                 No fluff,just the good stuff
               </h1>
-              <p className="text-[18px] w-[23rem] text-[#c9d8e8] md:w-[32rem]">
+              <p className="md:text-lg text-base w-[23rem] text-[#c9d8e8] md:w-[32rem]">
                 I don't want to waste your time with boring stuff you don't
                 need. So I've made sure my courses are clear, concise, to the
                 point, and free of technical jargon. No rambling or repetition,
@@ -206,13 +206,13 @@ function homepage() {
               <button className="w-[3.4rem] h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsClockFill className="text-[1.7rem] text-[#a679ff] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#dc60bc] font-semibold leading-9">
+              <h3 className="text-base mb-2 text-[#dc60bc] font-semibold leading-9">
                 Step-by-step lessons
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className=" text-2xl md:text-3xl text-white mb-[1rem] font-bold">
                 Easy-to-follow lessons
               </h1>
-              <p className="text-[18px] w-[23rem] text-[#c9d8e8] md:w-[32rem]">
+              <p className=" text-base md:text-lg w-[23rem] text-[#c9d8e8] md:w-[32rem]">
                 I know learning to code can be tough. So I've carefully
                 organized my courses into simple, bite-sized pieces to help you
                 progress smoothly, one step at a time. I'll guide you through
@@ -225,13 +225,13 @@ function homepage() {
               <button className="w-[3.4rem] h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsYoutube className="text-[1.7rem] text-[#6cccaf] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#6cccaf] font-semibold leading-9">
+              <h3 className="text-base mb-2 text-[#6cccaf] font-semibold leading-9">
                 Perfect mix of theory and practice
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className=" text-2xl md:text-3xl text-white mb-[1rem] font-bold">
                 Hands-on learning
               </h1>
-              <p className="text-[18px] w-[23rem]  text-[#c9d8e8] md:w-[32rem]">
+              <p className=" text-base md:text-lg w-[23rem]  text-[#c9d8e8] md:w-[32rem]">
                 I believe the best way to learn is by actually doing. That's why
                 my courses teach you the essential theory and provide practical
                 exercises. You'll be able to practice everything you learn and
@@ -254,13 +254,13 @@ function homepage() {
               <button className="w-[3.4rem] h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsClockFill className="text-[1.7rem] text-[#a679ff] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#a15bb2] font-semibold leading-9">
+              <h3 className="text-base  mb-2 text-[#a15bb2] font-semibold leading-9">
                 Get ready for the job
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className="md:text-3xl text-2xl text-white mb-[1rem] font-bold">
                 Real-world projects
               </h1>
-              <p className="text-[18px] w-[23rem] text-[#c9d8e8] md:w-[32rem]">
+              <p className="text-base md:text-lg w-[23rem] text-[#c9d8e8] md:w-[32rem]">
                 My courses are designed to prepare you for real-world jobs and
                 interviews. With in-depth, comprehensive courses packed with
                 real-world examples and exercises, you'll be ready to take on
@@ -315,9 +315,8 @@ function homepage() {
         <div className="mt-16 p-9 flex flex-col border  w-[350px] relative md:w-[480px] rounded-md border-[#262b42] bg-[#14182d]">
           <img
             src="https://codewithmosh.com/_next/static/media/money-back.160ae298.svg"
-            className="absolute -left-9 -top-12"
-            width={100}
-            height={100}
+            className="absolute w-12 -left-9 -top-12"
+           
           />
           <header className="flex justify-center items-center flex-col">
             <span className="font-bold text-4xl text-pink-500">$29/M</span>
