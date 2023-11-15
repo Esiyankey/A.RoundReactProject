@@ -7,3 +7,11 @@ input {
 label {
   font-size: 1.2rem;
 }
+.button{
+  padding:0.3rem 0.6rem 0.3rem 0.3rem;
+  color: white;
+  border-radius: 5px;
+}
+.backgroundGradientButton{
+  background: linear-gradient(120deg, #e72eb6, #8d25e7);
+}
