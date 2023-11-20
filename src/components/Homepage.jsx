@@ -11,6 +11,7 @@ import soundEngeneering from "../assets/sound-engeneering.jpg";
 import songWriting from "../assets/song-writing.jpg";
 import musicTherapy from "../assets/music-therapy.jpg";
 import "../styles/homepage.css";
+import { Link } from "react-router-dom";
 
 function homepage() {
   const info = [
@@ -67,7 +68,7 @@ function homepage() {
         <section>
           <div className="block my-36">
             <div className="  md:w-[680px] lg:w-[500px]  m-auto ml-4 mt-[5rem] lg:mt-[6rem]">
-              <h1 className="text-[2.2rem] md:text-[2.7rem]  font-extrabold leading-10 md:leading-[3rem] text-white">
+              <h1 className="text-[2.2rem] md:text-[2.7rem] lg:text-[5rem] font-extrabold leading-10 md:leading-[3rem] text-white">
                 Become the <span className="text-[#7bf9b8]">musician</span> you{" "}
                 <span className="text-[#e72ead]">desire </span>to be
               </h1>
@@ -75,10 +76,13 @@ function homepage() {
                 All the <span className="text-white">music courses</span> you
                 need to excel <span className="text-white">in one place.</span>
               </h3>
-              <button className="mt-8 hoverButton px-4 md:px-6 text-white backgroundGradientButton duration-500 transition-all flex gap-4 items-center mb-8 bg-gray-200 rounded-[30px] py-2 md:py-3">
+              <Link
+                to="/courses"
+                className="mt-8 hoverButton px-4 md:px-6 text-white backgroundGradientButton duration-500 transition-all flex gap-4 items-center mb-8 bg-gray-200 rounded-[30px] py-2 md:py-3"
+              >
                 VIEW COURSES
                 <BsArrowRight className="font-bold" />
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -282,19 +286,19 @@ function homepage() {
             experience you need to succeed.
           </p>
         </header>
-        {/* <div className="w-[300px] m-auto"> */}
-          {/* <div className="   "> */}
-            {/* {info.map((items, index) => {
+        <div>
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 m-auto max-w-[400px] md:max-w-[700px] lg:max-w-[1150px]  ">
+            {info.map((items, index) => {
               return (
                 <div
                   key={index}
-                  className="w-[330px] bg-[#12172a] rounded-xl border overflow-hidden border-[#262b42]"
+                  className="w-[350px]  bg-[#12172a] rounded border overflow-hidden border-[#262b42]"
                 >
                   <div className="relative w-full h-[198px]">
                     <img src={items.img} />
                   </div>
                   <div className="p-6">
-                    <h3 className=" leading-4 mb-4 text-lg font-semibold text-white">
+                    <h3 className=" leading-4 mb-4 mt-9 text-lg font-semibold text-white">
                       {items.title}
                     </h3>
                     <p className="mb-3 text-base text-[#c9d8e2]">
@@ -307,9 +311,9 @@ function homepage() {
                   </div>
                 </div>
               );
-            })} */}
-          {/* </div> */}
-        {/* </div> */}
+            })}
+          </div>
+        </div>
         <div className="text-center mb-4 ">
           <button className=" text-white rounded-[30px] font-semibold px-7 py-4 bg-[#8244ff]">
             VIEW ALL COURSES

@@ -11,10 +11,10 @@ import soundEngeneering from "../assets/sound-engeneering.jpg";
 import songWriting from "../assets/song-writing.jpg";
 import musicTherapy from "../assets/music-therapy.jpg";
 import "../styles/homepage.css";
-import "../styles/App.css"
+import "../styles/App.css";
+import { Link } from "react-router-dom";
 
-
-function App() {
+function homepage() {
   const info = [
     {
       img: instrumentInstruction,
@@ -65,11 +65,11 @@ function App() {
   ];
   return (
     <>
-      <div className="max-w-[1400px]  m-auto ">
+      <div className="max-w-[1400px] overflow-x-hidden m-auto ">
         <section>
           <div className="block my-36">
-            <div className="  md:w-[680px] lg:w-[500px]  m-auto ml-4 mt-[5rem] lg:mt-[6rem]">
-              <h1 className="text-[2.2rem] md:text-[2.7rem]  font-extrabold leading-10 md:leading-[3rem] text-white">
+            <div className="  md:w-[680px] lg:w-[550px]  m-auto ml-4 mt-[5rem] lg:mt-[6rem]">
+              <h1 className="text-[2.2rem] md:text-[2.7rem] lg:text-[3.5rem] font-extrabold leading-10 md:leading-[3rem] text-white">
                 Become the <span className="text-[#7bf9b8]">musician</span> you{" "}
                 <span className="text-[#e72ead]">desire </span>to be
               </h1>
@@ -77,20 +77,23 @@ function App() {
                 All the <span className="text-white">music courses</span> you
                 need to excel <span className="text-white">in one place.</span>
               </h3>
-              <button className="mt-8 hoverButton px-4 md:px-6 text-white backgroundGradientButton duration-500 transition-all flex gap-4 items-center mb-8 bg-gray-200 rounded-[30px] py-2 md:py-3">
+              <Link
+                to="/courses"
+                className="mt-8 hoverButton px-4 md:px-6 text-white backgroundGradientButton duration-500 transition-all flex gap-4 items-center mb-8 bg-gray-200 rounded-[30px] py-2 md:py-3"
+              >
                 VIEW COURSES
                 <BsArrowRight className="font-bold" />
-              </button>
+              </Link>
             </div>
           </div>
         </section>
         <section className="mt-[9rem] mb-[7rem]">
           <div className="flex flex-col items-center  ">
             <h3 className="text-[#696bfe] text-[1.4rem]">Hello,</h3>
-            <h3 className="text-white text-[2rem] my-4 font-bold">
+            <h3 className="text-white text-xl md:text-[2rem] my-4 font-bold">
               This is A.round lessons,
             </h3>
-            <p className="text-[#d2d8c8]  mt-[2rem] text-[1.1rem] md:text-[1.2rem] flex items-center w-[23.4rem] justify-center md:w-[44rem] text-center mb-[3rem]">
+            <p className="text-[#d2d8c8]  mt-[2rem] text-base md:text-[1.2rem] flex items-center w-[23.4rem] justify-center md:w-[44rem] text-center mb-[3rem]">
               Feeling stuck or overwhelmed in your musical quest? <br />
               No worries,I've got your back! Together, we'll harmonize your
               skills, and compose a brighter future.
@@ -102,7 +105,7 @@ function App() {
             </div>
           </div>
           <div className="grid grid-cols-2 mt-9 gap-6 md:grid-cols-4 w-[350px] md:w-[940px] md:mt-[5rem] m-auto md:gap-[0.8rem]">
-            <div className="shadow-xl w-[11rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)]  dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)]  dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full"></div>
@@ -117,7 +120,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="shadow-xl w-[11rem]  md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem]  md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-green-600 to-transparent  w-full"></div>
@@ -132,7 +135,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="shadow-xl w-[11rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border  border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border  border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-transparent  w-full"></div>
@@ -147,7 +150,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="shadow-xl w-[11rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
+            <div className="shadow-xl w-[9rem] md:w-[14rem] shadow-[rgba(13,18,36,1)] bg-[rgba(35,27,76,1)] dark:shadow-none border border-[#1f223c] dark:border-blue-850  dark:bg-blue-750 rounded-md relative">
               <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-3/4">
                   <div className="h-[1px] bg-gradient-to-r from-transparent via-orange-400 to-transparent  w-full"></div>
@@ -168,23 +171,23 @@ function App() {
       <section className="border-t-2 border-t-[#262b42] w-[100%] pt-[2rem]">
         <header className="flex flex-col justify-center items-center my-12 mx-6">
           <p className="text-[1.2rem] text-[#9e7cf3]">Features</p>
-          <h3 className="text-[30px] text-white font-bold">
-            Why learn with A.round{" "}
+          <h3 className="md:text-[30px] text-2xl text-white font-bold">
+            Why learn with A.round
           </h3>
         </header>
         <div className=" max-w-[1200px] m-auto mt-16">
-          <div className="grid grid-cols-1 mt-28 gap-8 my-10 md:grid-cols-2">
+          <div className="grid grid-cols-1 mt-28 gap-8 my-20 md:my-32 md:grid-cols-2">
             <div className="md:mx-4 mx-2">
               <button className="w-[3.4rem]  h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsClockFill className="text-[1.7rem] text-[#a679ff] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#956ffd] font-semibold leading-9">
+              <h3 className="text-base mb-2 text-[#956ffd] font-semibold leading-9">
                 Fast-track your learning
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className="text-2xl md:text-3xl text-white mb-[1rem] font-bold">
                 No fluff,just the good stuff
               </h1>
-              <p className="text-[18px] w-[23rem] text-[#c9d8e8] md:w-[32rem]">
+              <p className="md:text-lg text-base w-[23rem] text-[#c9d8e8] md:w-[32rem]">
                 I don't want to waste your time with boring stuff you don't
                 need. So I've made sure my courses are clear, concise, to the
                 point, and free of technical jargon. No rambling or repetition,
@@ -198,7 +201,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="md:grid   flex flex-col-reverse mt-28 gap-8 my-4  md:grid-cols-2">
+          <div className="md:grid   flex flex-col-reverse mt-28 gap-8 my-20 md:my-32 md:grid-cols-2">
             <div className="flex justify-center items-center">
               <div className=" w-80 relative md:w-[400px] h-[300px]">
                 <img src={aroundImage2} />
@@ -208,13 +211,13 @@ function App() {
               <button className="w-[3.4rem] h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsClockFill className="text-[1.7rem] text-[#a679ff] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#dc60bc] font-semibold leading-9">
+              <h3 className="text-base mb-2 text-[#dc60bc] font-semibold leading-9">
                 Step-by-step lessons
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className=" text-2xl md:text-3xl text-white mb-[1rem] font-bold">
                 Easy-to-follow lessons
               </h1>
-              <p className="text-[18px] w-[23rem] text-[#c9d8e8] md:w-[32rem]">
+              <p className=" text-base md:text-lg w-[23rem] text-[#c9d8e8] md:w-[32rem]">
                 I know learning to code can be tough. So I've carefully
                 organized my courses into simple, bite-sized pieces to help you
                 progress smoothly, one step at a time. I'll guide you through
@@ -222,18 +225,18 @@ function App() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 mt-28 gap-8 my-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 mt-28 gap-8 my-10 md:my-32 md:grid-cols-2">
             <div className="mx-4 ">
               <button className="w-[3.4rem] h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsYoutube className="text-[1.7rem] text-[#6cccaf] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#6cccaf] font-semibold leading-9">
+              <h3 className="text-base mb-2 text-[#6cccaf] font-semibold leading-9">
                 Perfect mix of theory and practice
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className=" text-2xl md:text-3xl text-white mb-[1rem] font-bold">
                 Hands-on learning
               </h1>
-              <p className="text-[18px] w-[23rem]  text-[#c9d8e8] md:w-[32rem]">
+              <p className=" text-base md:text-lg w-[23rem]  text-[#c9d8e8] md:w-[32rem]">
                 I believe the best way to learn is by actually doing. That's why
                 my courses teach you the essential theory and provide practical
                 exercises. You'll be able to practice everything you learn and
@@ -246,7 +249,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="md:grid  flex flex-col-reverse mt-28 gap-8 my-4 md:my-10 md:grid-cols-2">
+          <div className="md:grid  flex flex-col-reverse mt-28 gap-8 my-10 md:my-32 md:grid-cols-2">
             <div className="flex justify-center items-center">
               <div className="w-80 relative md:w-[400px] h-[500px]">
                 <img src={aroundImage4} />
@@ -256,13 +259,13 @@ function App() {
               <button className="w-[3.4rem] h-[3.4rem] flex justify-center mb-5 items-center rounded-[50%] bg-[#8080802a]">
                 <BsClockFill className="text-[1.7rem] text-[#a679ff] " />
               </button>
-              <h3 className="text-[1rem] mb-2 text-[#a15bb2] font-semibold leading-9">
+              <h3 className="text-base  mb-2 text-[#a15bb2] font-semibold leading-9">
                 Get ready for the job
               </h3>
-              <h1 className="text-3xl text-white mb-[1rem] font-bold">
+              <h1 className="md:text-3xl text-2xl text-white mb-[1rem] font-bold">
                 Real-world projects
               </h1>
-              <p className="text-[18px] w-[23rem] text-[#c9d8e8] md:w-[32rem]">
+              <p className="text-base md:text-lg w-[23rem] text-[#c9d8e8] md:w-[32rem]">
                 My courses are designed to prepare you for real-world jobs and
                 interviews. With in-depth, comprehensive courses packed with
                 real-world examples and exercises, you'll be ready to take on
@@ -284,28 +287,33 @@ function App() {
             experience you need to succeed.
           </p>
         </header>
-        <div className="grid  grid-cols-1 mb-12  mt-28 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:max-w-[1050px] md:max-w-[750px] m-auto">
-          {info.map((items, index) => {
-            return (
-              <div
-                key={index}
-                className="w-[330px] bg-[#12172a] rounded-xl border overflow-hidden border-[#262b42]"
-              >
-                <div className="relative w-full h-[198px]">
-                  <img src={items.img} />
+        <div>
+          <div className=" grid grid-cols-1 my-12 md:grid-cols-2 lg:grid-cols-3 gap-7 m-auto max-w-[400px] md:max-w-[700px] lg:max-w-[1150px]  ">
+            {info.map((items, index) => {
+              return (
+                <div
+                  key={index}
+                  className="w-[350px]  bg-[#12172a] rounded border overflow-hidden border-[#262b42]"
+                >
+                  <div className="relative w-full h-[198px]">
+                    <img src={items.img} />
+                  </div>
+                  <div className="p-6">
+                    <h3 className=" leading-4 mb-4 mt-9 text-lg font-semibold text-white">
+                      {items.title}
+                    </h3>
+                    <p className="mb-3 text-base text-[#c9d8e2]">
+                      {" "}
+                      {items.info}
+                    </p>
+                    <span className="font-semibold text-lg text-white">
+                      {items.price}
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className=" leading-4 mb-4 text-lg font-semibold text-white">
-                    {items.title}
-                  </h3>
-                  <p className="mb-3 text-base text-[#c9d8e2]"> {items.info}</p>
-                  <span className="font-semibold text-lg text-white">
-                    {items.price}
-                  </span>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
         <div className="text-center mb-4 ">
           <button className=" text-white rounded-[30px] font-semibold px-7 py-4 bg-[#8244ff]">
@@ -317,9 +325,7 @@ function App() {
         <div className="mt-16 p-9 flex flex-col border  w-[350px] relative md:w-[480px] rounded-md border-[#262b42] bg-[#14182d]">
           <img
             src="https://codewithmosh.com/_next/static/media/money-back.160ae298.svg"
-            className="absolute -left-9 -top-12"
-            width={100}
-            height={100}
+            className="absolute w-12 -left-9 -top-12"
           />
           <header className="flex justify-center items-center flex-col">
             <span className="font-bold text-4xl text-pink-500">$29/M</span>
@@ -350,4 +356,4 @@ function App() {
   );
 }
 
-export default App;
+export default homepage;

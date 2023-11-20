@@ -9,6 +9,8 @@ import Login from "./components/Login.jsx";
 import App from "./components/App.jsx";
 import "./index.css";
 import { SignUp } from "./components/SignUp.jsx";
+import { Courses } from "./components/Courses.jsx";
+import { Subscription } from "./components/Subscription.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,28 @@ const router = createBrowserRouter([
   {
     path:"/signup",
     element:<SignUp/>,
+    errorElement:<ErrorPage/>
+  },
+  {
+    path:"/courses",
+    element: (
+      <>
+        <Navbar />
+        <Courses/>
+        <Footer />
+      </>
+    ),
+    errorElement:<ErrorPage/>
+  },
+  {
+    path:"/subcription",
+    element: (
+      <>
+        <Navbar />
+        <Subscription/>
+        <Footer />
+      </>
+    ),
     errorElement:<ErrorPage/>
   }
 ]);

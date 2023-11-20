@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsTwitter } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import musicImage from "../assets/music-image2.jpg";
 import "../styles/signup.css";
 import { Link } from "react-router-dom";
 export const SignUp = () => {
+  const [name,setName]= useState("")
+  const [password,setPassword]= useState("")
+  const [confirmPassword,setConfirmPassword]= useState("")
+  const [email,setEmail]= useState("")
+  
+
   return (
     <div className="bg-white flex  h-[100vh] justify-center items-center text-center ">
       {/* <div className="w-[60%] h-[700px]">
@@ -41,25 +47,25 @@ export const SignUp = () => {
           </div>
           <div className="flex gap-2 ">
             <div className="flex flex-col items-start ">
-              <label>Name</label>
-              <input placeholder="name" type="text" />
+              <label>Full Name</label>
+              <input placeholder="full name" type="text" className="input"/>
             </div>
             <div className="flex flex-col items-start ">
               <label>Username</label>
-              <input placeholder="username" type="text" />
+              <input placeholder="username" type="text" className="input"/>
             </div>
           </div>
           <div className="flex flex-col items-start my-8 ">
             <label>Email</label>
-            <input placeholder="email" type="text" />
+            <input placeholder="hellome244@gmail.com" type="email" className="input"/>
           </div>
           <div className="flex flex-col items-start my-8">
             <label>Password</label>
-            <input placeholder="password" type="password" />
+            <input placeholder="password" type="password" className="input"/>
           </div>
           <div className="flex flex-col items-start">
             <label>Confirm Password</label>
-            <input placeholder="confirm password" type="password" />
+            <input placeholder="confirm password" type="password" className="input"/>
           </div>
           <button className=" w-full backgroundGradientButton mt-6 px-3 py-2 rounded text-white text-xl ">
             Create Account

@@ -1,9 +1,13 @@
-input {
+.input {
   padding: 0.6rem;
   border-radius: 5px;
   width: 100%;
   background-color: #f3f3f4;
 }
+input:focus{
+  outline: #f3f3f4;
+}
+
 label {
   font-size: 1.2rem;
 }

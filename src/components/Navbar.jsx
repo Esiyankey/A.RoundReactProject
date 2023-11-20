@@ -53,12 +53,12 @@ function Navbar() {
         <div className=" leading-none items-center pl-40 hidden  md:flex">
           <div className={`left-[10rem] flex gap-7 font-[500] pl-7  `}>
             <ul className="md:flex  md:items-center md:justify-center cursor-pointer md:gap-9 text-[0.9rem] md:text-[0.84rem] text-[#ced8e3]">
-              <li className="hover:text-white duration-700 py-3 md:py-0">
+              <Link to="/subscription" className="hover:text-white duration-700 py-3 md:py-0">
                 Subscription
-              </li>
-              <li className="hover:text-white  duration-700 py-3  md:py-0">
+              </Link>
+              <Link to="/courses" className="hover:text-white  duration-700 py-3  md:py-0">
                 Courses
-              </li>
+              </Link>
               <li className="hover:text-white duration-700   md:py-0 py-3">
                 Learning Paths
               </li>
@@ -92,7 +92,7 @@ function Navbar() {
               <li className="hover:text-white duration-700 py-2 ">
                 Subscription
               </li>
-              <li className="hover:text-white  duration-700 py-2 ">Courses</li>
+              <Link to="/courses" className="hover:text-white  duration-700 py-2 ">Courses</Link>
              
               <li className="hover:text-white duration-700  py-2">Forum</li>
               <Link
