@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     errorElement:<ErrorPage/>
   },
   {
-    path:"/subcription",
+    path:"/subscription",
     element: (
       <>
         <Navbar />
