@@ -1,5 +1,8 @@
 import React from "react";
 import { HiChartBar } from "react-icons/hi";
+import { MdOutlineSlowMotionVideo } from "react-icons/md";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+
 
 export const Subscription = () => {
   return (
@@ -28,11 +31,12 @@ export const Subscription = () => {
               <h2>Beginner to Pro</h2>
             </p>
             <p className="text-xl my-2 text-[#b4bdca] flex items-center gap-4 ">
-              <HiChartBar />
+            <MdOutlineSlowMotionVideo />
+              
               <h2>Hours of HD video</h2>
             </p>
             <p className="text-xl  my-2 text-[#b4bdca] flex items-center gap-4 ">
-              <HiChartBar />
+            <FaCloudDownloadAlt />
               <h2>Downloadable Content</h2>
             </p>
             <p className="text-xl my-2  text-[#b4bdca] flex items-center gap-4 ">
