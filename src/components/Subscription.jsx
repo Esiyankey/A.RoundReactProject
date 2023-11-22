@@ -9,20 +9,20 @@ import { HiOutlineClock } from "react-icons/hi2";
 
 export const Subscription = () => {
   return (
-    <div className=" flex flex-col   md:mx-5 ">
-      <div className="md:items-start max-w-[1400px] m-auto gap-80 flex lg:items-center">
+    <div className=" flex flex-col   md:mx-5 mt-36">
+      <div className="md:items-start max-w-[1600px]  m-auto gap-72 flex lg:items-center">
         <div className="lg:flex-[50%] flex flex-col items-start">
-          <h1 className="md:text-5xl text-white font-bold ">
+          <h1 className="md:text-5xl my-8 text-white font-bold ">
             All-Access Subscription
           </h1>
-          <p className="text-xl text-[#b4bdca] md:w-[600px] my-5">
+          <p className="text-xl text-[#b4bdca] md:w-[600px] my-3">
             Become the best musician you can be with unlimited access to all the
             existing and future courses{" "}
           </p>
           <div>
             <span>4.7</span> <span>2867 reviews</span>
           </div>
-          <h3 className="text-lg text-[#b4bdca]">
+          <h3 className="text-lg my-5 text-[#b4bdca]">
             Subscribe now to access all courses. Cancel anytime
           </h3>
           <button className="my-6 rounded-full backgroundGradientButton px-3 py-2 text-lg font-medium text-white">
@@ -35,15 +35,15 @@ export const Subscription = () => {
         </div>
         <div className="lg:flex-[50%] md:my-12 flex justify-center items-center">
           <div className="flex flex-col justify-center items-center  ">
-            {/* <div class="flex justify-center  -translate-y-[1px]">
+            <div class="flex justify-center  -translate-y-[1px]">
             <div class="w-3/4">
               <div class="flex flex-row">
-                <div class="h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-violet-600 md:w-[800px] lg:w-[400px]"></div>
+                <div class="h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-violet-600 md:w-[800px] lg:w-[380px]"></div>
                 <div class="h-[1px] bg-gradient-to-r from-violet-600 to-transparent w-full"></div>
               </div>
             </div>
-          </div> */}
-            <div className=" bg-[#11152c] lg:w-[400px] md:w-[800px] p-16">
+          </div>
+            <div className=" bg-[#11152c] lg:w-[380px] md:w-[800px] p-16">
               <h1 className="text-xl text-white my-3 font-semibold">
                 COURSE OVERVIEW
               </h1>
