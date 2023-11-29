@@ -11,14 +11,18 @@ import "./index.css";
 import { SignUp } from "./components/SignUp.jsx";
 import { Courses } from "./components/Courses.jsx";
 import { Subscription } from "./components/Subscription.jsx";
+import { Loading } from "./components/loading.jsx";
+
+
 
 const router = createBrowserRouter([
+
   {
     path: "/",
     element: (
       <>
         <Navbar />
-        <App />
+        <App/>
         <Footer />
       </>
     ),
@@ -63,6 +67,18 @@ const router = createBrowserRouter([
         <Navbar />
         <Subscription/>
         <Footer />
+      </>
+    ),
+    errorElement:<ErrorPage/>
+  },
+  {
+    path:"/loading",
+    element: (
+      <>
+
+        
+        <Loading/>
+      
       </>
     ),
     errorElement:<ErrorPage/>
