@@ -11,7 +11,7 @@ import "./index.css";
 import { SignUp } from "./components/SignUp.jsx";
 import { Courses } from "./components/Courses.jsx";
 import { Subscription } from "./components/Subscription.jsx";
-import { Loading } from "./components/loading.jsx";
+
 
 
 
@@ -71,18 +71,18 @@ const router = createBrowserRouter([
     ),
     errorElement:<ErrorPage/>
   },
-  {
-    path:"/loading",
-    element: (
-      <>
+  // {
+  //   path:"/loading",
+  //   element: (
+  //     <>
 
         
-        <Loading/>
+  //       <Loading/>
       
-      </>
-    ),
-    errorElement:<ErrorPage/>
-  }
+  //     </>
+  //   ),
+  //   errorElement:<ErrorPage/>
+  // }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
