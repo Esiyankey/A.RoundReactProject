@@ -181,7 +181,7 @@ export const Courses = () => {
               onChange={(e) => {
                 setSearch(e.target.value);
               }}
-              className="p-3  w-[350px] border border-[#262b42] bg-[#12172a] rounded "
+              className="p-3  w-[350px] border border-[rgb(38,43,66)] bg-[#12172a] rounded "
             />
           </div>
           <div>
