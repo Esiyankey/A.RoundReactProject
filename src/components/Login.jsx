@@ -73,7 +73,7 @@ function Login() {
               <span className="text-blue-600 font-bold"> facebook</span>
             </button>
           </div>
-          <p className="text-lg">Already have an account? <Link to="/signup" className="text-pink-500">Sign up</Link></p>
+          <p className="text-lg">Already have an account? <Link to="" className="text-pink-500">Sign up</Link></p>
         </form>
       </div>
     </div>
