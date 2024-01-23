@@ -9,7 +9,7 @@ import jazz from "../assets/jazz.jpg";
 import soundEngeneering from "../assets/sound-engeneering.jpg";
 import songWriting from "../assets/song-writing.jpg";
 import musicTherapy from "../assets/music-therapy.jpg";
-import "../styles/homepage.css";
+
 
 export const Courses = () => {
   const [search, setSearch] = useState("");

@@ -10,7 +10,6 @@ import jazz from "../assets/jazz.jpg";
 import soundEngeneering from "../assets/sound-engeneering.jpg";
 import songWriting from "../assets/song-writing.jpg";
 import musicTherapy from "../assets/music-therapy.jpg";
-import "../styles/homepage.css";
 import { Link } from "react-router-dom";
 import { Video_Follower_Section } from "./Video_Follower_Section";
 

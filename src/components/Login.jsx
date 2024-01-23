@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BiUser, BiLogoFacebookCircle } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
-import "../styles/login.css";
 import { Link } from "react-router-dom";
 import {
   AiOutlineLock,
@@ -57,7 +56,7 @@ function Login() {
             Log In
           </button>
           <h4 className="my-4 text-base">
-            ..............Login with Others................
+            ............................OR..............................
           </h4>
           <div className="flex items-center  mb-6 relative">
             <FcGoogle className="absolute text-2xl left-16 md:left-20 text-center top-4 ml-2" />

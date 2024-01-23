@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    body{
+        background-color: #0d1224;
+        min-height: 100vh;
+        background: radial-gradient(circle, #0d1224 0%, #0d1224 100%);
+    }
+
+}
+
+@layer components {
+    .follower-card {
+        @apply  w-[9rem] md:w-[12rem] lg:w-[14rem]  bg-[#11152c]   border border-[#1f223c] border-t-0  rounded-md relative outline-4 ;        
+    }
+    .hoverButton:hover{
+        gap: 1.2rem;
+        width: 210px;
+    }
+    .backgroundGradientButton{
+        background: linear-gradient(120deg, #e72eb6, #8d25e7);
+    }
+    .box-shadow{
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+    .active{
+        border-bottom: 1px ;
+        background: radial-gradient(circle, rgba(35,27,76,1) 0%, rgba(13,18,36,1) 100%);
+    
+    }
+    
+    .slide-down-menu {
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+      }
+}

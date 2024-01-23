@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import AroundGradient from "../assets/a-round-gradient.png";
 import AroundLogo from "../assets/a-round.png";
-import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -34,7 +33,7 @@ function Navbar() {
           scroll ? "active" : ""
         }`}
       >
-        <div className="flex leading-none relative right-4 sm-right-0 ">
+        <Link to="/" className="flex leading-none relative right-4 sm-right-0 ">
           <img
             src={AroundGradient}
             alt="A.round logo"
@@ -49,7 +48,7 @@ function Navbar() {
             width={100}
             height={10}
           />
-        </div>
+        </Link>
         <div className=" leading-none items-center pl-40 hidden  md:flex">
           <div className={`left-[10rem]  flex gap-7 font-[500] pl-7 md:left-0 md:pl-0 `}>
             <ul className="md:flex  md:items-center md:justify-center cursor-pointer md:gap-9 text-[0.9rem] md:text-[0.84rem] text-[#ced8e3]">
@@ -59,7 +58,7 @@ function Navbar() {
               <Link to="/courses" className="hover:text-white  duration-700 py-3  md:py-0">
                 Courses
               </Link>
-              <Link to="/learning_paths" className="hover:text-white duration-700  md:py-0 py-3 ">
+              <Link to="/learning-paths" className="hover:text-white duration-700  md:py-0 py-3 ">
                 Learning Paths
               </Link>
               <li className="hover:text-white duration-700  md:py-0 py-3">
@@ -74,7 +73,7 @@ function Navbar() {
             </ul>
             <Link
               to="/login"
-              className=" px-2 py-1  md:py-3 text-[#ffffff] bg-[#8244ff] md:w-[120px] text-[0.7rem] md:text-[0.9rem] relative right-4 sm:right-0  rounded-[30px] hover:bg-[#6d32e4] duration-700"
+              className=" px-2 text-center py-1  md:py-3 text-[#ffffff] bg-[#8244ff] md:w-[120px] text-[0.7rem] md:text-[0.9rem] relative right-4 sm:right-0  rounded-[30px] hover:bg-[#6d32e4] duration-700"
             >
               Member Area
             </Link>
@@ -104,7 +103,7 @@ function Navbar() {
             </ul>
             <Link
               to="/login"
-              className=" px-3 py-2 mt-7 text-[#ffffff] bg-[#8244ff]  text-[0.7rem]  relative right-4 sm:right-0  rounded-[30px] hover:bg-[#6d32e4] duration-700"
+              className="   mt-7 text-[#ffffff] bg-[#8244ff]   text-[0.7rem]  relative right-4 sm:right-0  rounded-[30px] hover:bg-[#6d32e4] duration-700"
             >
               Member Area
             </Link>

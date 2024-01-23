@@ -369,10 +369,9 @@ import jazz from "../assets/jazz.jpg";
 import soundEngeneering from "../assets/sound-engeneering.jpg";
 import songWriting from "../assets/song-writing.jpg";
 import musicTherapy from "../assets/music-therapy.jpg";
-import "../styles/homepage.css";
 import { Link } from "react-router-dom";
 import { Video_Follower_Section } from "./Video_Follower_Section";
-import "../styles/App.css";
+
 
 function App() {
   const info = [
@@ -425,11 +424,11 @@ function App() {
   ];
   return (
     <>
-      <div className="max-w-[1400px] overflow-x-hidden m-auto ">
+      <div className="max-w-[1400px] overflow-x-hidden m-auto">
         <section>
-          <div className="block my-36">
-            <div className="  md:w-[680px]   m-auto ml-4 mt-[5rem] lg:mt-[6rem]">
-              <h1 className="text-[2.2rem] lg:w-[500px] md:text-[2.7rem] lg:text-[3rem] font-extrabold leading-10 md:leading-[3rem] text-white">
+          <div className="flex justify-start items-start flex-col mt-48 ">
+            <div className="  md:w-[680px] lg:w-[1200px]  m-auto ">
+              <h1 className="text-[2.2rem]  lg:w-[500px] md:text-[2.7rem] lg:text-[3rem]  font-extrabold leading-10 md:leading-[3rem] text-white">
                 Become the <span className="text-[#7bf9b8]">musician</span> you{" "}
                 <span className="text-[#e72ead]">desire </span>to be
               </h1>
@@ -437,7 +436,10 @@ function App() {
                 All the <span className="text-white">music courses</span> you
                 need to excel <span className="text-white">in one place.</span>
               </h3>
-              <Link to="/courses" className="flex gap-4 text-white mt-[2rem] items-center rounded-[30px] backgroundGradientButton w-[200px] py-2 md:py-3 pl-4 duration-500 transition-all hoverButton">
+              <Link
+                to="/courses"
+                className="flex gap-4 text-white mt-[2rem] items-center rounded-[30px] backgroundGradientButton w-[200px] py-2 md:py-3 pl-4 duration-500 transition-all hoverButton"
+              >
                 VIEW COURSES
                 <BsArrowRight className="font-bold" />
               </Link>
@@ -593,17 +595,20 @@ function App() {
             })}
           </div>
         </div>
-        <div  className="text-center mb-4 ">
-          <Link to="/courses" className=" text-white rounded-[30px] font-semibold px-7 py-4 bg-[#8244ff]">
+        <div className="text-center mb-4 ">
+          <Link
+            to="/courses"
+            className=" text-white rounded-[30px] font-semibold px-7 py-4 bg-[#8244ff]"
+          >
             VIEW ALL COURSES
           </Link>
         </div>
       </section>
       <section className="flex justify-center">
-        <div className="mt-16 p-9 flex flex-col border  w-[350px] relative md:w-[480px] rounded-md border-[#262b42] bg-[#14182d]">
+        <div className="mt-16 p-9 flex flex-col border  w-[350px] relative md:w-[480px]  rounded-md border-[#262b42] bg-[#14182d]">
           <img
             src="https://codewithmosh.com/_next/static/media/money-back.160ae298.svg"
-            className="absolute w-12 -left-9 -top-12"
+            className="absolute w-12 lg:w-20 -left-9 -top-12 md:-left-9 md:-top-8"
           />
           <header className="flex justify-center items-center flex-col">
             <span className="font-bold text-4xl text-pink-500">$29/M</span>

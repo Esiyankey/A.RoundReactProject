@@ -11,6 +11,7 @@ import "./index.css";
 import { SignUp } from "./components/SignUp.jsx";
 import { Courses } from "./components/Courses.jsx";
 import { Subscription } from "./components/Subscription.jsx";
+import { Learning_Paths } from "./components/Learning_Paths.jsx";
 
 
 
@@ -66,6 +67,17 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Subscription/>
+        <Footer />
+      </>
+    ),
+    errorElement:<ErrorPage/>
+  },
+  {
+    path:"/learning-paths",
+    element: (
+      <>
+        <Navbar />
+        <Learning_Paths/>
         <Footer />
       </>
     ),
