@@ -12,9 +12,8 @@ function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleShowPassword = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setShowPassword(!showPassword);
-
   };
 
   return (
@@ -32,7 +31,6 @@ function Login() {
               type="text"
               className="py-3 px-10 w-full border rounded-xl outline-none bg-gray-50"
               placeholder="username"
-
             />
           </div>
           <div className="flex mb-6 relative">
@@ -40,11 +38,13 @@ function Login() {
 
             <input
               placeholder="Password"
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               className="py-3 px-10 w-full border rounded-xl  bg-gray-50 outline-none"
-
             />
-            <button onClick={handleShowPassword} className="flex text-xl  items-center absolute right-0 top-4 mr-5 ">
+            <button
+              onClick={handleShowPassword}
+              className="flex text-xl  items-center absolute right-0 top-4 mr-5 "
+            >
               {showPassword ? (
                 <AiOutlineEye className=" text-blue-800" />
               ) : (
@@ -55,9 +55,7 @@ function Login() {
           <button className="py-3 px-7 backgroundGradientButton text-lg text-white w-full border rounded-xl">
             Log In
           </button>
-          <h4 className="my-4 text-base">
-            OR
-          </h4>
+          <h4 className="my-4 text-base">OR</h4>
           <div className="flex items-center  mb-6 relative">
             <FcGoogle className="absolute text-2xl left-16 md:left-20 text-center top-4 ml-2" />
             <button className="py-3 px-9 w-full  border-[2px] text-lg border-[#e7e9ec] rounded-xl">
@@ -72,7 +70,12 @@ function Login() {
               <span className="text-blue-600 font-bold"> facebook</span>
             </button>
           </div>
-          <p className="text-lg">Already have an account? <Link to="" className="text-pink-500">Sign up</Link></p>
+          <p className="text-lg">
+            Already have an account?{" "}
+            <Link to="" className="text-pink-500">
+              Sign up
+            </Link>
+          </p>
         </form>
       </div>
     </div>
