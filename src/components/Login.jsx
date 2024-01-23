@@ -56,7 +56,7 @@ function Login() {
             Log In
           </button>
           <h4 className="my-4 text-base">
-            ............................OR..............................
+            OR
           </h4>
           <div className="flex items-center  mb-6 relative">
             <FcGoogle className="absolute text-2xl left-16 md:left-20 text-center top-4 ml-2" />
